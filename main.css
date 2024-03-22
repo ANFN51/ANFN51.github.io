@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset */
  {
     margin: 0;
     padding: 0;
@@ -6,99 +6,87 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    padding: 20px;
     background-color: #f4f4f4;
 }
 
-/* Navigation */
-nav ul {
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header ul {
     list-style: none;
-    background-color: #0056b3;
-    text-align: center;
-    padding: 10px 0;
+    padding: 0;
 }
 
-nav ul li {
+header ul li {
     display: inline;
+    margin: 0 15px;
 }
 
-nav ul li a {
+header ul li a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    padding: 15px 20px;
-    display: inline-block;
 }
 
-/* Sections */
 section {
-    padding: 20px;
+    padding: 20px 0;
     margin: 20px 0;
 }
 
-.hero {
-    background-color: #009688;
-    color: #ffffff;
-    padding: 40px 20px;
+h1, h2 {
+    color: #0056b3;
+}
+
+#home {
     text-align: center;
+    padding: 100px 20px;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
 }
 
-/* Skills */
-.skills ul {
-    list-style-type: none;
+#skills ul {
+    list-style: none;
 }
 
-.skills li {
-    background-color: #e0e0e0;
+#skills ul li {
+    background: #ddd;
     margin: 10px 0;
     padding: 10px;
-    border-radius: 5px;
-}
-
-/* Projects */
-.project {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Contact Form */
-form {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
     margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 10px;
 }
 
 form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #0056b3;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+    background: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #ffffff;
+    background: #333;
+    color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-    nav ul li {
+@media (max-width: 768px) {
+    header ul li {
         display: block;
+        text-align: center;
     }
 }
