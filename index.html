@@ -3,56 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Noun | Lebanese Engineering Student</title>
+    <title>Ali Noun | Engineer & Creator</title>
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
+
+<header>
+    <nav>
         <div class="container">
-            <h1>Ali Noun</h1>
-            <p>Welcome to my personal website!</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </header>
-    <section class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <img src="images/me.jpg" alt="Ali Noun" class="profile-pic">
-            <p>I am a Lebanese engineering student passionate about structures and design. Outside of my studies, I embrace the thrill of cycling and the tranquility of swimming.</p>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h1>Discover the World of Engineering</h1>
+        <p>Welcome to my digital portfolio. Dive into my engineering projects, coursework, and passions.</p>
+    </div>
+</section>
+
+<section id="about" class="info-section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I'm Ali Noun, a passionate engineering student with a love for building and creativity. Outside the classroom, you'll find me exploring the great outdoors on my bike or diving into the deep blue.</p>
+        <img src="images/me.jpg" alt="Ali Noun" class="profile-pic">
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2>
+        <p>Explore a selection of my projects and contributions to the world of engineering and design.</p>
+        <!-- Example project; replicate for more projects -->
+        <div class="project">
+            <img src="images/project1.jpg" alt="Project Name">
+            <h3>Project Title</h3>
+            <p>Project description...</p>
         </div>
-    </section>
-    <section class="courses">
-        <div class="container">
-            <h2>Current Courses</h2>
-            <table>
-                <tr>
-                    <th>Course Name</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>Introduction to Web Development</td>
-                </tr>
-                <tr>
-                    <td>College Algebra</td>
-                    <td>Fundamental Mathematical Principles</td>
-                </tr>
-                <tr>
-                    <td>Trigonometry</td>
-                    <td>Advanced Engineering Mathematics</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-    <section class="interests">
-        <div class="container">
-            <h2>Interests</h2>
-            <p>I have a deep appreciation for the timeless narratives and wit found in classic movies and comedies. They're a delightful contrast to the precise world of engineering!</p>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Ali Noun. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
+</section>
+
+<section id="courses" class="info-section">
+    <div class="container">
+        <h2>Courses</h2>
+        <p>A glimpse into my current academic journey:</p>
+        <table>
+            <!-- Table content -->
+        </table>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Ali Noun. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
