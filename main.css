@@ -1,74 +1,104 @@
-/* Smooth transition for all hover effects */
-{
-    transition: all 0.3s ease;
+/* Basic Reset */
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Hover effect for navigation links */
-nav ul li a:hover {
-    background: #007bff;
-    color: #fff;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Keyframes for fadeIn effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* Navigation */
+nav ul {
+    list-style: none;
+    background-color: #0056b3;
+    text-align: center;
+    padding: 10px 0;
 }
 
-/* Apply fadeIn animation to all sections */
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+/* Sections */
 section {
-    animation: fadeIn 1.5s ease-out;
+    padding: 20px;
+    margin: 20px 0;
 }
 
-/* Pulse animation for profile picture */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
+.hero {
+    background-color: #009688;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.profile-pic:hover {
-    animation: pulse 1.5s infinite;
+/* Skills */
+.skills ul {
+    list-style-type: none;
 }
 
-/* Rotate animation for course table headers */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.skills li {
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.courses th:hover {
-    animation: rotate 1s linear;
+/* Projects */
+.project {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Scale and border color change for course table rows */
-.courses td:hover {
-    transform: scale(1.02);
-    border-color: #007bff;
+/* Contact Form */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Footer link hover effect */
-footer a:hover {
-    color: #007bff;
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
     }
 }
