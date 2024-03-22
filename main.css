@@ -1,130 +1,74 @@
-/* Basic Reset */
+/* Smooth transition for all hover effects */
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    font-size: 16px;
-    background: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #004d99;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
+/* Hover effect for navigation links */
 nav ul li a:hover {
-    background: #003366;
-}
-
-/* Hero Section */
-.hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    background: #007bff;
     color: #fff;
-    padding: 100px 0;
-    text-align: center;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-/* About Section */
-.about {
-    background: #fff;
-    padding: 50px 20px;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px auto;
-    display: block;
-}
-
-/* Courses Section */
-.courses {
-    background: #eee;
-    padding: 50px 20px;
-}
-
-.courses table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-.courses th, .courses td {
-    text-align: left;
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
+/* Keyframes for fadeIn effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
+    to {
+        opacity: 1;
+    }
+}
 
+/* Apply fadeIn animation to all sections */
+section {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Pulse animation for profile picture */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.profile-pic:hover {
+    animation: pulse 1.5s infinite;
+}
+
+/* Rotate animation for course table headers */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.courses th:hover {
+    animation: rotate 1s linear;
+}
+
+/* Scale and border color change for course table rows */
+.courses td:hover {
+    transform: scale(1.02);
+    border-color: #007bff;
+}
+
+/* Footer link hover effect */
+footer a:hover {
+    color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
     }
 }
