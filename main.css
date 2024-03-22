@@ -84,6 +84,16 @@ footer {
     color: #fff;
 }
 
+
+.profile-pic {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
+    border-radius: 50%; 
+}
+
 @media (max-width: 768px) {
     header ul li {
         display: block;
