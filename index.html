@@ -3,56 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Noun's Portfolio</title>
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <title>Ali Noun | Engineering Portfolio</title>
+     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#courses">Courses</a></li>
-    </ul>
-</nav>
+    <section id="home" class="hero">
+        <h1>Ali Noun</h1>
+        <p>Innovative Engineering Student & Creative Thinker</p>
+    </section>
 
-<section class="hero" id="home">
-    <h1>Welcome to My Portfolio</h1>
-    <p>I'm Ali Noun, an engineering student passionate about design and technology.</p>
-</section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm an engineering student from Lebanon with a passion for design and technology. I'm dedicated to learning and applying my skills to solve real-world problems.</p>
+    </section>
 
-<section class="about" id="about">
-    <h2>About Me</h2>
-    <img src="me.jpg" alt="Ali Noun" class="profile-pic">
-    <p>Hello! I am a Lebanese engineering student specializing in innovative structures and designs. Outside academia, I enjoy cycling and swimming.</p>
-</section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Structural Engineering</li>
+            <li>Creative Design</li>
+        </ul>
+    </section>
 
-<section class="courses" id="courses">
-    <h2>My Courses</h2>
-    <table>
-        <tr>
-            <th>Course</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>Introduction to Web Development</td>
-        </tr>
-        <tr>
-            <td>College Algebra</td>
-            <td>Exploring Algebraic Concepts</td>
-        </tr>
-        <tr>
-            <td>Trigonometry</td>
-            <td>Advanced Engineering Mathematics</td>
-        </tr>
-    </table>
-</section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of a standout project you've worked on.</p>
+        </div>
+        <!-- Repeat for more projects -->
+    </section>
 
-<footer>
-    <p>&copy; 2024 Ali Noun. All rights reserved.</p>
-</footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Interested in collaborating? Reach out to discuss potential projects or opportunities.</p>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
+    <footer>
+        <p>&copy; 2024 Ali Noun. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
