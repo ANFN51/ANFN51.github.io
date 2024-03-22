@@ -1,85 +1,124 @@
-/* styles/main.css */
-/* Reset some default styles */
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Use a font stack that's clean and modern */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eaeaea;
-    color: #333;
+    background-color: #fff;
+    color: #333333;
+    font-size: 16px;
     line-height: 1.6;
 }
 
-/* Utility classes to control the main container layout */
+/* Container for centering content */
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;
+    max-width: 1200px;
 }
 
-/* Style the header with a darker background */
+/* Header styles */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1.2rem 0;
-    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    color: #f8f8f8;
 }
 
-/* About section with profile image styles */
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    font-style: italic;
+}
+
+/* Navigation bar */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #eaeaea;
+}
+
+/* About me styles */
 .about {
-    padding: 2rem 0;
-    background: #f4f4f4;
+    padding: 40px 0;
+    background: linear-gradient(to right, #76b852, #8DC26F);
+    color: #fff;
     text-align: center;
 }
 
-.about .profile-pic {
-    width: 150px;
+.about img.profile-pic {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
     margin: 20px 0;
 }
 
 /* Courses table styles */
 .courses {
-    padding: 2rem 0;
+    padding: 40px 0;
+}
+
+.courses h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .courses table {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 10px;
     border-collapse: collapse;
 }
 
 .courses th,
 .courses td {
     text-align: left;
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
 }
 
 /* Interests section */
 .interests {
-    background: #fff;
-    padding: 2rem 0;
+    background: #f4f4f4;
+    padding: 40px 0;
     text-align: center;
 }
 
 /* Footer styles */
 footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #333;
+    color: #f8f8f8;
+    padding: 20px 0;
     text-align: center;
 }
 
-/* Responsive design for smaller screens */
+/* Responsive design */
 @media (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 90%;
+    }
+
+    nav ul li {
+        margin: 0 10px;
     }
 }
-
 
