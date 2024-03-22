@@ -1,0 +1,124 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Container for centering content */
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Header styles */
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    color: #f8f8f8;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    font-style: italic;
+}
+
+/* Navigation bar */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #eaeaea;
+}
+
+/* About me styles */
+.about {
+    padding: 40px 0;
+    background: linear-gradient(to right, #76b852, #8DC26F);
+    color: #fff;
+    text-align: center;
+}
+
+.about img.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+    margin: 20px 0;
+}
+
+/* Courses table styles */
+.courses {
+    padding: 40px 0;
+}
+
+.courses h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.courses table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.courses th,
+.courses td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Interests section */
+.interests {
+    background: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
