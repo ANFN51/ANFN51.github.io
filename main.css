@@ -1,124 +1,130 @@
-/* CSS DOCUMENT */
- {
+/* Basic Reset */
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #fff;
-    color: #333333;
-    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
+    font-size: 16px;
+    background: #f4f4f4;
+    color: #333;
 }
 
-/* Container for centering content */
 .container {
-    width: 80%;
+    max-width: 1100px;
     margin: auto;
-    max-width: 1200px;
+    padding: 0 20px;
 }
 
-/* Header styles */
-header {
-    background-color: #1a1a1a;
-    padding: 20px 0;
-    color: #f8f8f8;
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004d99;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-header h1 {
-    margin-bottom: 5px;
-}
-
-header p {
-    font-style: italic;
-}
-
-/* Navigation bar */
 nav ul {
     list-style: none;
-    text-align: center;
-    padding: 10px 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #f8f8f8;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #eaeaea;
-}
-
-/* About me styles */
-.about {
-    padding: 40px 0;
-    background: linear-gradient(to right, #76b852, #8DC26F);
+nav ul li a {
     color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #003366;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
     text-align: center;
 }
 
-.about img.profile-pic {
-    border-radius: 50%;
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    background: #fff;
+    padding: 50px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.profile-pic {
     width: 150px;
     height: 150px;
-    border: 5px solid #fff;
-    margin: 20px 0;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
 }
 
-/* Courses table styles */
+/* Courses Section */
 .courses {
-    padding: 40px 0;
-}
-
-.courses h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    background: #eee;
+    padding: 50px 20px;
 }
 
 .courses table {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     border-collapse: collapse;
 }
 
-.courses th,
-.courses td {
+.courses th, .courses td {
     text-align: left;
     padding: 12px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Interests section */
-.interests {
-    background: #f4f4f4;
-    padding: 40px 0;
-    text-align: center;
-}
-
-/* Footer styles */
+/* Footer */
 footer {
-    background-color: #333;
-    color: #f8f8f8;
-    padding: 20px 0;
+    background: #333;
+    color: #fff;
     text-align: center;
+    padding: 20px 10px;
 }
 
-/* Responsive design */
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        margin: 0 10px;
+        margin: 10px 0;
     }
 }
-
