@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name's Home Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>Short bio or description about yourself.</p>
+    </section>
+    <section id="courses">
+        <h2>Current Courses</h2>
+        <ul>
+            <li>Course 1</li>
+            <li>Course 2</li>
+            <li>Course 3</li>
+            <!-- Add more courses as needed -->
+        </ul>
+    </section>
+    <section id="interests">
+        <h2>Interests</h2>
+        <p>My three favorite sports/movies/books/TV shows:</p>
+        <ul>
+            <li>Interest 1 - <a href="http://example.com">External Link</a></li>
+            <li>Interest 2</li>
+            <li>Interest 3</li>
+        </ul>
+    </section>
+    <section id="media">
+        <h2>Images/Videos</h2>
+        <img src="path_to_image.jpg" alt="Description of image">
+        <img src="path_to_second_image.jpg" alt="Description of second image">
+        <!-- Or you can embed a video instead of one of the images -->
+        <!-- <video src="path_to_video.mp4" controls></video> -->
+    </section>
+    <section id="table">
+        <h2>Table Title</h2>
+        <table>
+            <!-- Your table content -->
+        </table>
+    </section>
+    <footer>
+        <p>Contact information or additional links.</p>
+    </footer>
+</body>
+</html>
