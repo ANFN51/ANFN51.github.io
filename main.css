@@ -1,58 +1,85 @@
-/styles/main.css/
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+/* styles/main.css */
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Use a font stack that's clean and modern */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Utility classes to control the main container layout */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Style the header with a darker background */
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     text-align: center;
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
+/* About section with profile image styles */
+.about {
+    padding: 2rem 0;
+    background: #f4f4f4;
+    text-align: center;
 }
 
-nav ul {
-    padding: 0;
-    list-style: none;
+.about .profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+/* Courses table styles */
+.courses {
+    padding: 2rem 0;
 }
 
-section {
-    padding: 20px;
-    margin: 0 10%;
-}
-
-section#media img,
-section#media video {
-    max-width: 100%;
-    height: auto;
-}
-
-table {
+.courses table {
     width: 100%;
+    margin-top: 1rem;
     border-collapse: collapse;
 }
 
-table, th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
+.courses th,
+.courses td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
 }
 
+/* Interests section */
+.interests {
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Footer styles */
 footer {
     background: #333;
     color: #fff;
-    text-align: center;
     padding: 1rem 0;
+    text-align: center;
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
