@@ -86,12 +86,19 @@ footer {
 
 
 .profile-pic {
-    max-width: 150px; 
-    height: auto; 
-    border-radius: 50%; 
+    max-width: 150px; /* Smaller size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular shape */
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto; /* Center align */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Scale up the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
 
 @media (max-width: 768px) {
     header ul li {
