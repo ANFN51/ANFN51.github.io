@@ -6,7 +6,7 @@
     --link-hover-color: #024d8c;
 }
 
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -138,6 +138,35 @@ footer {
 
 .back-to-home:hover {
     background-color: var(--link-hover-color);
+}
+img {
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+}
+
+a {
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--link-hover-color);
 }
 
 @media (max-width: 768px) {
