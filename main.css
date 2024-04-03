@@ -12,13 +12,12 @@
     box-sizing: border-box;
 }
 
-body, html {
+body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     padding: 20px;
     background-color: var(--background-color);
-    margin: 0;
 }
 
 header {
@@ -54,38 +53,6 @@ header ul li a:hover, header ul li a:focus {
     color: var(--link-hover-color);
 }
 
-#home {
-    position: relative;
-    text-align: center;
-    padding: 100px 20px;
-    color: #fff;
-    overflow: hidden;
-}
-
-#home svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-}
-
-#home h1, #home p {
-    position: relative;
-    z-index: 1;
-}
-
-.profile-pic {
-    max-width: 150px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-    border: 4px solid white;
-    z-index: 1;
-}
-
 section {
     padding: 20px 0;
     margin: 20px 0;
@@ -95,11 +62,23 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-#skills ul, #hobbies ul, #projects .project, #contact form {
+#home {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+#skills ul, #hobbies ul {
     list-style-type: none;
     padding: 0;
-    position: relative;
-    z-index: 1;
+}
+
+#skills ul li, #hobbies ul li {
+    background: #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 form input, form textarea {
@@ -114,7 +93,7 @@ form button {
     background: var(--primary-color);
     color: #fff;
     padding: 10px 20px;
-    border: none;
+    border: 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -128,8 +107,66 @@ footer {
     padding: 20px;
     background: var(--footer-background-color);
     color: #fff;
-    position: relative;
-    z-index: 1;
+}
+
+.profile-pic {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.back-to-home {
+    display: block;
+    width: max-content;
+    padding: 10px;
+    margin: 0 auto 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-to-home:hover {
+    background-color: var(--link-hover-color);
+}
+img {
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+}
+
+a {
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--link-hover-color);
 }
 
 @media (max-width: 768px) {
@@ -142,4 +179,3 @@ footer {
         max-width: 100px;
     }
 }
-
