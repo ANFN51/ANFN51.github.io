@@ -182,7 +182,13 @@ th {
     background-color: var(--primary-color);
     color: #fff;
 }
+.course-name {
+    width: 60%;
+}
 
+.field-of-study {
+    width: 40%; 
+}
 tr:nth-child(even) {
     background-color: var(--background-color);
 }
