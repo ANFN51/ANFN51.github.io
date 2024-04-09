@@ -74,6 +74,12 @@ h1, h2 {
     color: #fff;
 }
 
+
+#hobbies {
+    display: none;
+}
+
+
 #skills ul, #hobbies ul {
     list-style-type: none;
     padding: 0;
