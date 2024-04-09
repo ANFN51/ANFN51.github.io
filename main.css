@@ -6,7 +6,7 @@
     --link-hover-color: #024d8c;
 }
 
- {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -72,6 +72,10 @@ h1, h2 {
     padding: 100px 20px;
     background: url('hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
+}
+
+#hobbies {
+    display: none;
 }
 
 #skills ul, #hobbies ul {
