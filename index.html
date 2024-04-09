@@ -8,54 +8,56 @@
     <link href="main.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body style="background-image: url('/images/background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<body>
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#projects">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="about.html">My Story</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="home" class="hero">
+            <h1>Ali Noun</h1>
+            <img src="me.jpg" alt="Ali Noun" class="profile-pic">
+            <p>Engineering student with a passion for robotics and engineering.</p>
+        </section>
 
-    <section id="home" class="hero">
-        <h1>Ali Noun</h1>
-        <img src="me.jpg" alt="Ali Noun" class="profile-pic">
-        <p>Engineering student</p>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Engineering</li>
+                <li>Investment</li>
+            </ul>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Development</li>
-            <li>Engineering</li>
-            <li>investment</li>
-        </ul>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article class="project">
+                <h3>Stocktracker</h3>
+                <p>A live stocktracker website developed during an intro to programming class with Java.</p>
+            </article>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Stocktracker</h3>
-            <p>I previously worked on a live stocktracker website 
-                 in a intro to programming class with java .</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Interested in collaborating? Reach out to discuss potential projects or opportunities.</p>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Interested in collaborating? Reach out to discuss potential projects or opportunities.</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Ali Noun. All rights reserved.</p>
     </footer>
