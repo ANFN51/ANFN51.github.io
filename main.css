@@ -1,4 +1,4 @@
-root {
+:root {
     --primary-color: #0056b3;
     --text-color: #333;
     --background-color: #f4f4f4;
@@ -6,7 +6,7 @@ root {
     --link-hover-color: #024d8c;
 }
 
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
     color: var(--text-color);
     padding: 20px;
     background-color: var(--background-color);
-    background-image: url('images/background.jpg');
+    background-image: url('/images/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,12 +73,6 @@ h1, h2 {
     background: url('hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
 }
-
-
-#hobbies {
-    display: none;
-}
-
 
 #skills ul, #hobbies ul {
     list-style-type: none;
@@ -191,3 +185,4 @@ a:hover {
         max-width: 100px;
     }
 }
+
