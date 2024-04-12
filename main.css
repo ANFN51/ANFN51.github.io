@@ -9,13 +9,12 @@
 
 .background-container {
     min-height: 100vh;
-    background-color: var(--background-gradient-start); 
+    background: linear-gradient(to bottom right, var(--background-gradient-start), var(--background-gradient-end));
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
 }
-
 
 header {
     background: var(--footer-background-color);
@@ -102,9 +101,13 @@ footer {
     color: #fff;
 }
 
-.profile-pic:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.profile-pic {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 img, .profile-pic {
@@ -153,17 +156,13 @@ tr:hover {
         flex-direction: column;
     }
     
+    .profile-pic {
+        max-width: 100px;
+    }
+
     table, th, td {
         font-size: 0.9em;
     }
-}
-.profile-pic {
-    max-width: 100px; 
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 
