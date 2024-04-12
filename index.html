@@ -58,10 +58,8 @@
         </ul>
     </section>
 
-    <div class="hobbies-toggle">
-        <button id="showHobbiesBtn" aria-expanded="false">Show Hobbies</button>
-        <button id="hideHobbiesBtn" style="display:none;" aria-expanded="true">Hide Hobbies</button>
-    </div>
+    <button id="showHobbiesBtn">Show Hobbies</button>
+    <button id="hideHobbiesBtn" style="display:none;">Hide Hobbies</button>
 
     <section id="contact">
         <h2>Contact</h2>
@@ -88,19 +86,14 @@
             showHobbiesBtn.style.display = "none";
             hideHobbiesBtn.style.display = "inline";
             hobbiesSection.scrollIntoView({ behavior: 'smooth' });
-            hideHobbiesBtn.setAttribute('aria-expanded', 'true');
-            showHobbiesBtn.setAttribute('aria-expanded', 'false');
         });
 
         hideHobbiesBtn.addEventListener("click", function() {
             hobbiesSection.style.display = "none";
             showHobbiesBtn.style.display = "inline"; 
             hideHobbiesBtn.style.display = "none";
-            hideHobbiesBtn.setAttribute('aria-expanded', 'false');
-            showHobbiesBtn.setAttribute('aria-expanded', 'true');
         });
     </script>
 </body>
 </html>
-
 
