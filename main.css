@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(to right, #000000, #0a0f0d, #00171f, #003459, #0056b3);
+}
+
 header {
     background: var(--footer-background-color);
     color: #fff;
