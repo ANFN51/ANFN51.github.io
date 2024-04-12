@@ -63,7 +63,7 @@ h1, h2 {
 #home {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to bottom, var(--background-color), rgba(0,0,0,0)); /* Fading color effect */
+    background: linear-gradient(to bottom, var(--background-color), rgba(0,0,0,0)); 
 }
 
 #hobbies {
