@@ -12,13 +12,12 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100vh;
-    background: linear-gradient(to bottom right, black, red);
-    color: white; 
+    background: linear-gradient(to bottom right, var(--background-gradient-start), var(--background-gradient-end));
+    color: var(--text-color); 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 header {
     background: var(--footer-background-color); 
@@ -40,7 +39,6 @@ header ul li a {
 header ul li a:hover, header ul li a:focus {
     color: var(--link-hover-color);
 }
-
 
 section {
     padding: 20px 0;
