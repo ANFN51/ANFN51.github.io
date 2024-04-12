@@ -27,7 +27,7 @@ body::before {
     height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
-    z-index: 0;
+    z-index: 1;
 }
 
 body::after {
@@ -46,7 +46,7 @@ body::after {
     background-size: 550px 550px, 500px 500px, 450px 450px, 400px 400px;
     background-position: 0 0, 100px 150px, -100px -150px, 50px -150px;
     animation: animateStars 50s linear infinite;
-    z-index: 0;
+    z-index: 1;
 }
 
 @keyframes animateStars {
