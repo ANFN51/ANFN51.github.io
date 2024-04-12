@@ -1,58 +1,15 @@
 :root {
     --primary-color: #0056b3;
-    --text-color: #f4f4f4;
+    --text-color: #333;
     --background-color: #f4f4f4;
     --footer-background-color: #333;
     --link-hover-color: #024d8c;
 }
 
-body, html {
+ {
     margin: 0;
     padding: 0;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background: #000; 
-    color: var(--text-color);
     box-sizing: border-box;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    overflow: hidden;
-    z-index: 1;
-}
-
-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    background-image: 
-        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 30px),
-        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 28px),
-        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 29px),
-        radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-    background-size: 550px 550px, 500px 500px, 450px 450px, 400px 400px;
-    background-position: 0 0, 100px 150px, -100px -150px, 50px -150px;
-    animation: animateStars 50s linear infinite;
-    z-index: 1;
-}
-
-
-@keyframes animateStars {
-    from { background-position: 0 0, 100px 150px, -100px -150px, 50px -150px; }
-    to { background-position: -10000px 5000px, 10000px -5000px, -10000px 5000px, 10000px -5000px; }
 }
 
 header {
@@ -100,7 +57,7 @@ h1, h2 {
 #home {
     text-align: center;
     padding: 100px 20px;
-    background: url('https://via.placeholder.com/1200x800/0056b3/f4f4f4?text=Background+Image') no-repeat center center/cover;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
 }
 
@@ -252,6 +209,7 @@ th:last-child, td:last-child {
     table, th, td {
         font-size: 0.9em;
     }
+}
 
     header ul li {
         display: block;
