@@ -7,17 +7,18 @@
     --background-gradient-end: #0a141e; 
 }
 
-body, html {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
-    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom right, black, red);
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 header {
     background: var(--footer-background-color);
