@@ -49,6 +49,7 @@ body::after {
     z-index: 1;
 }
 
+
 @keyframes animateStars {
     from { background-position: 0 0, 100px 150px, -100px -150px, 50px -150px; }
     to { background-position: -10000px 5000px, 10000px -5000px, -10000px 5000px, 10000px -5000px; }
@@ -99,7 +100,7 @@ h1, h2 {
 #home {
     text-align: center;
     padding: 100px 20px;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: url('https://via.placeholder.com/1200x800/0056b3/f4f4f4?text=Background+Image') no-repeat center center/cover;
     color: #fff;
 }
 
