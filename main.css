@@ -9,12 +9,13 @@
 
 .background-container {
     min-height: 100vh;
-    background: linear-gradient(to bottom right, var(--background-gradient-start), var(--background-gradient-end));
+    background-color: var(--background-gradient-start); 
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
 }
+
 
 header {
     background: var(--footer-background-color);
