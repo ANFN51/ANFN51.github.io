@@ -28,28 +28,25 @@
         <p>Engineering student</p>
     </section>
 
-     <section id="bio">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="bio-content">
-            <img src="formula.jpg" alt="Ali Noun beside a Formula 1 car" style="width: 100%; max-width: 300px; height: auto; float: left; margin-right: 20px;">
-            <p>Hello! I’m <strong>Ali Noun</strong>, a dedicated engineering student from Lebanon with a deep-seated passion for <strong>mechanical and software engineering</strong>. My fascination with engineering began in my early teens, sparked by the sleek design and incredible speed of <strong>Formula 1 racing cars</strong>. This passion quickly grew into a broader interest in how things work, driving me towards a path of engineering.</p>
-            
+    <section id="bio">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="bio-content">
+                <img src="formula.jpg" alt="Ali Noun beside a Formula 1 car" style="width: 100%; max-width: 300px; height: auto; float: left; margin-right: 20px;">
+                <p>Hello! I’m <strong>Ali Noun</strong>, a dedicated engineering student from Lebanon with a deep-seated passion for <strong>mechanical and software engineering</strong>. My fascination with engineering began in my early teens, sparked by the sleek design and incredible speed of <strong>Formula 1 racing cars</strong>. This passion quickly grew into a broader interest in how things work, driving me towards a path of engineering.</p>
+            </div>
+            <div style="clear: both;"></div> 
         </div>
-        <div style="clear: both;"></div> 
-    </div>
-</section>
+    </section>
 
-
-     <section id="skills">
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
             <li>Web Development</li>
             <li>Engineering</li>
-            <li>investement trading</li>
+            <li>Investment trading</li>
         </ul>
     </section>
-
 
     <section id="hobbies" style="display: none;">
         <h2>Hobbies</h2>
@@ -62,10 +59,9 @@
     </section>
 
     <button id="showHobbiesBtn">Show Hobbies</button>
-     <button id="hideHobbiesBtn" style="display:none;">Hide Hobbies</button>
+    <button id="hideHobbiesBtn" style="display:none;">Hide Hobbies</button>
 
-
-       <section id="contact">
+    <section id="contact">
         <h2>Contact</h2>
         <p>Interested in collaborating? Reach out to discuss potential projects or opportunities.</p>
         <form>
@@ -80,24 +76,24 @@
         <p>&copy; 2024 Ali Noun. All rights reserved.</p>
     </footer>
 
-   <script>
-    var showHobbiesBtn = document.getElementById("showHobbiesBtn");
-    var hideHobbiesBtn = document.getElementById("hideHobbiesBtn");
-    var hobbiesSection = document.getElementById("hobbies");
+    <script>
+        var showHobbiesBtn = document.getElementById("showHobbiesBtn");
+        var hideHobbiesBtn = document.getElementById("hideHobbiesBtn");
+        var hobbiesSection = document.getElementById("hobbies");
 
-    showHobbiesBtn.addEventListener("click", function() {
-        hobbiesSection.style.display = "block";
-        showHobbiesBtn.style.display = "none";
-        hideHobbiesBtn.style.display = "inline";
-    });
+        showHobbiesBtn.addEventListener("click", function() {
+            hobbiesSection.style.display = "block";
+            showHobbiesBtn.style.display = "none";
+            hideHobbiesBtn.style.display = "inline";
+            hobbiesSection.scrollIntoView({ behavior: 'smooth' });
+        });
 
-    hideHobbiesBtn.addEventListener("click", function() {
-        hobbiesSection.style.display = "none";
-        showHobbiesBtn.style.display = "inline"; 
-        hideHobbiesBtn.style.display = "none";
-    });
-</script>
-
-
+        hideHobbiesBtn.addEventListener("click", function() {
+            hobbiesSection.style.display = "none";
+            showHobbiesBtn.style.display = "inline"; 
+            hideHobbiesBtn.style.display = "none";
+        });
+    </script>
 </body>
 </html>
+
