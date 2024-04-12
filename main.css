@@ -6,10 +6,11 @@
     --link-hover-color: #024d8c;
 }
 
- {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: linear-gradient(to right, #ff0000 0%, #000000 100%);
 }
 
 header {
@@ -30,6 +31,7 @@ header ul {
     justify-content: center;
     align-items: center;
 }
+
 
 header ul li {
     margin: 0 15px;
