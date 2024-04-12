@@ -3,8 +3,8 @@
     --text-color: #ecf0f1; 
     --footer-background-color: #34495e; 
     --link-hover-color: #3498db; 
-    --background-gradient-start: #1a1a1a; 
-    --background-gradient-end: #000033; 
+    --background-gradient-start: #17202a; 
+    --background-gradient-end: #0a141e; 
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100vh;
-    background: linear-gradient(to bottom right, #1a1a1a, #303030);
+    background: linear-gradient(to bottom right, black, red);
     color: white; 
     display: flex;
     justify-content: center;
@@ -207,6 +207,7 @@ th:last-child, td:last-child {
         font-size: 0.9em;
     }
 }
+
 
 
 
