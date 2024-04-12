@@ -64,6 +64,7 @@ h1, h2 {
     text-align: center;
     padding: 100px 20px;
     background: linear-gradient(to bottom, var(--background-color), rgba(0,0,0,0)); 
+    color: #fff;
 }
 
 #hobbies {
@@ -215,3 +216,4 @@ th:last-child, td:last-child {
         font-size: 0.9em;
     }
 }
+
