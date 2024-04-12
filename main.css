@@ -13,11 +13,12 @@ body {
     font-family: Arial, sans-serif;
     height: 100vh;
     background: linear-gradient(to bottom right, var(--background-gradient-start), var(--background-gradient-end));
-    color: var(--text-color); 
+    color: white; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 header {
     background: var(--footer-background-color); 
@@ -40,6 +41,7 @@ header ul li a:hover, header ul li a:focus {
     color: var(--link-hover-color);
 }
 
+
 section {
     padding: 20px 0;
     margin: 20px 0;
@@ -52,7 +54,7 @@ h1, h2 {
 #home {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to bottom, var(--background-color), rgba(0,0,0,0)); 
+    background: linear-gradient(to bottom, var(--primary-color), rgba(0,0,0,0)); 
     color: #fff;
 }
 
@@ -205,6 +207,7 @@ th:last-child, td:last-child {
         font-size: 0.9em;
     }
 }
+
 
 
 
