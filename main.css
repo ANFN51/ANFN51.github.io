@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #0056b3;
-    --text-color: #f4f4f4;
-    --footer-background-color: #333;
-    --link-hover-color: #024d8c;
-    --background-gradient-start: #1b2735;
-    --background-gradient-end: #090a0f;
+    --primary-color: #2c3e50; 
+    --text-color: #ecf0f1; 
+    --footer-background-color: #34495e; 
+    --link-hover-color: #3498db; 
+    --background-gradient-start: #17202a; 
+    --background-gradient-end: #0a141e; 
 }
 
 body, html {
