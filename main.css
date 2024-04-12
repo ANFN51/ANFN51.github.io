@@ -13,7 +13,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background: #000000; /* Solid black background */
 }
 
 header {
@@ -61,10 +61,9 @@ h1, h2 {
 #home {
     text-align: center;
     padding: 100px 20px;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: none; 
     color: #fff;
 }
-
 #hobbies {
     display: none;
 }
