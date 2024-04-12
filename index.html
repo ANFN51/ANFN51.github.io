@@ -24,26 +24,32 @@
 
     <section id="home" class="hero">
         <h1>Ali Noun</h1>
+        <img src="me.jpg" alt="Ali Noun" class="profile-pic">
         <p>Engineering student</p>
     </section>
 
-    <section id="bio">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="bio-content">
-                <p>Hello! I’m <strong>Ali Noun</strong>, a dedicated engineering student from Lebanon with a deep-seated passion for <strong>mechanical and software engineering</strong>. My fascination with engineering began in my early teens, sparked by the sleek design and incredible speed of <strong>Formula 1 racing cars</strong>. This passion quickly grew into a broader interest in how things work, driving me towards a path of engineering.</p>
-            </div>
+     <section id="bio">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="bio-content">
+            <img src="formula.jpg" alt="Ali Noun beside a Formula 1 car" style="width: 100%; max-width: 300px; height: auto; float: left; margin-right: 20px;">
+            <p>Hello! I’m <strong>Ali Noun</strong>, a dedicated engineering student from Lebanon with a deep-seated passion for <strong>robotics and mechanical engineering</strong>. My fascination with engineering began in my early teens, sparked by the sleek design and incredible speed of <strong>Formula 1 racing cars</strong>. This passion quickly grew into a broader interest in how things work, driving me towards a path of discovery and innovation.</p>
+            <p>Throughout my academic journey
         </div>
-    </section>
+        <div style="clear: both;"></div> 
+    </div>
+</section>
 
-    <section id="skills">
+
+     <section id="skills">
         <h2>Skills</h2>
         <ul>
             <li>Web Development</li>
             <li>Engineering</li>
-            <li>Investment trading</li>
+            <li>investement trading</li>
         </ul>
     </section>
+
 
     <section id="hobbies" style="display: none;">
         <h2>Hobbies</h2>
@@ -55,17 +61,18 @@
         </ul>
     </section>
 
-    <button id="showHobbiesBtn" class="button">Show Hobbies</button>
-    <button id="hideHobbiesBtn" class="button" style="display:none;">Hide Hobbies</button>
+    <button id="showHobbiesBtn">Show Hobbies</button>
+     <button id="hideHobbiesBtn" style="display:none;">Hide Hobbies</button>
 
-    <section id="contact">
+
+       <section id="contact">
         <h2>Contact</h2>
         <p>Interested in collaborating? Reach out to discuss potential projects or opportunities.</p>
         <form>
             <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Email" required>
             <textarea placeholder="Message"></textarea>
-            <button type="submit" class="button">Send</button>
+            <button type="submit">Send</button>
         </form>
     </section>
 
@@ -73,25 +80,25 @@
         <p>&copy; 2024 Ali Noun. All rights reserved.</p>
     </footer>
 
-    <script>
-        var showHobbiesBtn = document.getElementById("showHobbiesBtn");
-        var hideHobbiesBtn = document.getElementById("hideHobbiesBtn");
-        var hobbiesSection = document.getElementById("hobbies");
+   <script>
+    var showHobbiesBtn = document.getElementById("showHobbiesBtn");
+    var hideHobbiesBtn = document.getElementById("hideHobbiesBtn");
+    var hobbiesSection = document.getElementById("hobbies");
 
-        showHobbiesBtn.addEventListener("click", function() {
-            hobbiesSection.style.display = "block";
-            showHobbiesBtn.style.display = "none";
-            hideHobbiesBtn.style.display = "inline";
-            hobbiesSection.scrollIntoView({ behavior: 'smooth' });
-        });
+    showHobbiesBtn.addEventListener("click", function() {
+        hobbiesSection.style.display = "block";
+        showHobbiesBtn.style.display = "none";
+        hideHobbiesBtn.style.display = "inline";
+    });
 
-        hideHobbiesBtn.addEventListener("click", function() {
-            hobbiesSection.style.display = "none";
-            showHobbiesBtn.style.display = "inline"; 
-            hideHobbiesBtn.style.display = "none";
-        });
-    </script>
+    hideHobbiesBtn.addEventListener("click", function() {
+        hobbiesSection.style.display = "none";
+        showHobbiesBtn.style.display = "inline"; 
+        hideHobbiesBtn.style.display = "none";
+    });
+</script>
+
+
 </body>
 </html>
-
 
