@@ -157,6 +157,14 @@ tr:hover {
         font-size: 0.9em;
     }
 }
+.profile-pic {
+    max-width: 100px; 
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
 
 
 
