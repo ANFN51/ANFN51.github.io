@@ -1,22 +1,28 @@
 :root {
-    --primary-color: #0056b3;
-    --text-color: #333;
-    --background-color: #f4f4f4;
-    --footer-background-color: #333;
-    --link-hover-color: #024d8c;
+    --primary-color: #2c3e50; 
+    --text-color: #ecf0f1; 
+    --footer-background-color: #34495e; 
+    --link-hover-color: #3498db; 
+    --background-gradient-start: #1a1a1a; 
+    --background-gradient-end: #000033; 
 }
 
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(135deg, #ff0084 0%, #33001b 50%, #0ff 100%);
-    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #1a1a1a, #303030);
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
 header {
-    background: var(--footer-background-color);
-    color: #fff;
+    background: var(--footer-background-color); 
+    color: var(--text-color); 
     padding-top: 20px;
     padding-bottom: 20px;
     position: sticky;
@@ -25,20 +31,8 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-header ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li {
-    margin: 0 15px;
-}
-
 header ul li a {
-    color: #fff;
+    color: var(--text-color); 
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -46,6 +40,7 @@ header ul li a {
 header ul li a:hover, header ul li a:focus {
     color: var(--link-hover-color);
 }
+
 
 section {
     padding: 20px 0;
@@ -55,9 +50,11 @@ section {
 h1, h2 {
     color: var(--primary-color);
 }
+
 #home {
     text-align: center;
     padding: 100px 20px;
+    background: linear-gradient(to bottom, var(--background-color), rgba(0,0,0,0)); 
     color: #fff;
 }
 
@@ -209,16 +206,8 @@ th:last-child, td:last-child {
     table, th, td {
         font-size: 0.9em;
     }
-
-    header ul li {
-        display: block;
-        text-align: center;
-    }
-
-    .profile-pic {
-        max-width: 100px;
-    }
 }
+
 
 
 
