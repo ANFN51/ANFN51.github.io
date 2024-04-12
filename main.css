@@ -6,31 +6,16 @@
     --link-hover-color: #024d8c;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #1c1c1c, #000000);
-    z-index: -1;
-    animation: gradientAnimation 10s ease infinite alternate;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
@@ -231,15 +216,3 @@ th:last-child, td:last-child {
         font-size: 0.9em;
     }
 }
-
-    header ul li {
-        display: block;
-        text-align: center;
-    }
-
-    .profile-pic {
-        max-width: 100px;
-    }
-}
-
-
