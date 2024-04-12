@@ -16,7 +16,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#bio">Bio</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#" onclick="showHobbies()">Hobbies</a></li>
                 <li><a href="about.html">Classes</a></li>
             </ul>
         </nav>
@@ -84,11 +84,11 @@
     var hideHobbiesBtn = document.getElementById("hideHobbiesBtn");
     var hobbiesSection = document.getElementById("hobbies");
 
-    showHobbiesBtn.addEventListener("click", function() {
+    function showHobbies() {
         hobbiesSection.style.display = "block";
         showHobbiesBtn.style.display = "none";
         hideHobbiesBtn.style.display = "inline";
-    });
+    }
 
     hideHobbiesBtn.addEventListener("click", function() {
         hobbiesSection.style.display = "none";
@@ -100,4 +100,5 @@
 
 </body>
 </html>
+
 
