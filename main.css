@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(135deg, #ff0084 0%, #33001b 50%, #0ff 100%);
+    background: linear-gradient(135deg, #00796b 0%, #00bcd4 100%);
     color: var(--text-color);
 }
 
