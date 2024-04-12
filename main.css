@@ -176,4 +176,48 @@ table {
 
 th, td {
     padding: 12px;
-    border: 1px
+    border: 1px solid var(--background-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+tr:hover {
+    background-color: var(--link-hover-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+table, th, td {
+    transition: background-color 0.3s ease;
+}
+
+th:first-child, td:first-child {
+    width: 60%;
+}
+
+th:last-child, td:last-child {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 0.9em;
+    }
+
+    header ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .profile-pic {
+        max-width: 100px;
+    }
+}
