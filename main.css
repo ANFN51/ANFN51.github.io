@@ -23,7 +23,7 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: linear-gradient(180deg, #000046 0%, #1CB5E0 100%); /* Gradient mimicking the night sky */
+  background: linear-gradient(180deg, #000046 0%, #1CB5E0 100%); 
   color: var(--text-color);
   box-sizing: border-box;
 }
