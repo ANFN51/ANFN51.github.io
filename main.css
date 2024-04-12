@@ -14,7 +14,6 @@ body {
     color: var(--text-color);
 }
 
-
 header {
     background: var(--footer-background-color);
     color: #fff;
@@ -33,7 +32,6 @@ header ul {
     justify-content: center;
     align-items: center;
 }
-
 
 header ul li {
     margin: 0 15px;
@@ -112,115 +110,4 @@ footer {
 .profile-pic {
     max-width: 150px;
     height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-pic:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.back-to-home {
-    display: block;
-    width: max-content;
-    padding: 10px;
-    margin: 0 auto 20px;
-    background-color: var(--primary-color);
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.back-to-home:hover {
-    background-color: var(--link-hover-color);
-}
-
-img {
-    border-radius: 50%;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--link-hover-color);
-}
-
-a {
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: var(--link-hover-color);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid var(--background-color);
-    text-align: left;
-}
-
-th {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-tr:nth-child(even) {
-    background-color: var(--background-color);
-}
-
-tr:hover {
-    background-color: var(--link-hover-color);
-    color: #fff;
-    cursor: pointer;
-}
-
-table, th, td {
-    transition: background-color 0.3s ease;
-}
-
-th:first-child, td:first-child {
-    width: 60%;
-}
-
-th:last-child, td:last-child {
-    width: 40%;
-}
-
-@media (max-width: 768px) {
-    table, th, td {
-        font-size: 0.9em;
-    }
-}
-
-    header ul li {
-        display: block;
-        text-align: center;
-    }
-
-    .profile-pic {
-        max-width: 100px;
-    }
-}
+    border-radi
