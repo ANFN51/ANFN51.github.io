@@ -1,24 +1,22 @@
 :root {
-    --primary-color: #2c3e50;
-    --text-color: #ecf0f1;
-    --footer-background-color: #34495e;
-    --link-hover-color: #3498db;
-    --background-gradient-start: #17202a;
-    --background-gradient-end: #0a141e;
+    --primary-color: #0056b3;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --footer-background-color: #333;
+    --link-hover-color: #024d8c;
 }
 
-.background-container {
-    min-height: 100vh;
-    background: linear-gradient(to bottom right, var(--background-gradient-start), var(--background-gradient-end));
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #ff0084 0%, #33001b 50%, #0ff 100%);
     color: var(--text-color);
 }
 
 header {
     background: var(--footer-background-color);
-    color: var(--text-color);
+    color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
     position: sticky;
@@ -39,18 +37,17 @@ header ul li {
     margin: 0 15px;
 }
 
-header ul li a, .back-to-home, button, a {
-    color: var(--text-color);
+header ul li a {
+    color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-header ul li a:hover, header ul li a:focus, .back-to-home:hover, button:hover, a:hover {
+header ul li a:hover, header ul li a:focus {
     color: var(--link-hover-color);
-    background-color: var(--link-hover-color);
 }
 
-section, #home, #skills, #hobbies {
+section {
     padding: 20px 0;
     margin: 20px 0;
 }
@@ -62,8 +59,12 @@ h1, h2 {
 #home {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
+    background: url('hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
+}
+
+#hobbies {
+    display: none;
 }
 
 #skills ul, #hobbies ul {
@@ -78,20 +79,25 @@ h1, h2 {
     border-radius: 5px;
 }
 
-form input, form textarea, form button {
+form input, form textarea {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
 form button {
     background: var(--primary-color);
     color: #fff;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background: var(--link-hover-color);
 }
 
 footer {
@@ -110,7 +116,29 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img, .profile-pic {
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.back-to-home {
+    display: block;
+    width: max-content;
+    padding: 10px;
+    margin: 0 auto 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-to-home:hover {
+    background-color: var(--link-hover-color);
+}
+
+img {
     border-radius: 50%;
 }
 
@@ -120,20 +148,36 @@ nav ul {
 }
 
 button {
+    padding: 10px 20px;
     background-color: var(--primary-color);
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-table, th, td {
+button:hover {
+    background-color: var(--link-hover-color);
+}
+
+a {
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+}
+
+th, td {
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--background-color);
     text-align: left;
-    transition: background-color 0.3s ease;
 }
 
 th {
@@ -142,7 +186,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #ddd;
+    background-color: var(--background-color);
 }
 
 tr:hover {
@@ -151,17 +195,30 @@ tr:hover {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    header ul, nav ul {
-        flex-direction: column;
-    }
-    
-    .profile-pic {
-        max-width: 100px;
-    }
+table, th, td {
+    transition: background-color 0.3s ease;
+}
 
+th:first-child, td:first-child {
+    width: 60%;
+}
+
+th:last-child, td:last-child {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
     table, th, td {
         font-size: 0.9em;
+    }
+
+    header ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .profile-pic {
+        max-width: 100px;
     }
 }
 
