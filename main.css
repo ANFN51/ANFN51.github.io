@@ -56,13 +56,6 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-#home {
-    text-align: center;
-    padding: 100px 20px;
-    color: #fff;
-    background: linear-gradient(135deg, #ff0084 0%, #33001b 50%, #0ff 100%);
-}
-
 #hobbies {
     display: none;
 }
