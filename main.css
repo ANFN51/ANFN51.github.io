@@ -1,9 +1,10 @@
 :root {
-    --primary-color: #0056b3; 
-    --text-color: #fff; 
-    --background-color: #1b2735; 
-    --footer-background-color: #333; 
-    --link-hover-color: #024d8c; 
+    --primary-color: #0056b3;
+    --text-color: #f4f4f4;
+    --footer-background-color: #333;
+    --link-hover-color: #024d8c;
+    --background-gradient-start: #1b2735;
+    --background-gradient-end: #090a0f;
 }
 
 body, html {
@@ -14,7 +15,7 @@ body, html {
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background: var(--background-color);
+    background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
     color: var(--text-color);
 }
 
@@ -28,6 +29,7 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+
 
 header ul {
     list-style: none;
