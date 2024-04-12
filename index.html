@@ -74,12 +74,24 @@
         <p>&copy; 2024 Ali Noun. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.getElementById("showHobbiesBtn").addEventListener("click", function() {
-            var hobbiesSection = document.getElementById("hobbies");
-            hobbiesSection.style.display = "block";
-        });
-    </script>
+   <script>
+    var showHobbiesBtn = document.getElementById("showHobbiesBtn");
+    var hideHobbiesBtn = document.getElementById("hideHobbiesBtn");
+    var hobbiesSection = document.getElementById("hobbies");
+
+    showHobbiesBtn.addEventListener("click", function() {
+        hobbiesSection.style.display = "block";
+        showHobbiesBtn.style.display = "none";
+        hideHobbiesBtn.style.display = "inline";
+    });
+
+    hideHobbiesBtn.addEventListener("click", function() {
+        hobbiesSection.style.display = "none";
+        showHobbiesBtn.style.display = "inline"; 
+        hideHobbiesBtn.style.display = "none";
+    });
+</script>
+
 
 </body>
 </html>
