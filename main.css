@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #0056b3;
-    --text-color: #333;
-    --background-color: #f4f4f4;
-    --footer-background-color: #333;
-    --link-hover-color: #024d8c;
+    --primary-color: #0056b3; 
+    --text-color: #fff; 
+    --background-color: #1b2735; 
+    --footer-background-color: #333; 
+    --link-hover-color: #024d8c; 
 }
 
 body, html {
@@ -63,8 +63,7 @@ h1, h2 {
 #home {
     text-align: center;
     padding: 100px 20px;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
+    background: linear-gradient(to bottom, var(--background-color), rgba(0,0,0,0)); /* Fading color effect */
 }
 
 #hobbies {
