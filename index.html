@@ -9,7 +9,7 @@
     <link href="main.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body class="background-container">
+<body>
     <header>
         <nav>
             <ul>
@@ -24,7 +24,6 @@
 
     <section id="home" class="hero">
         <h1>Ali Noun</h1>
-        <img src="me.jpg" alt="Ali Noun" class="profile-pic">
         <p>Engineering student</p>
     </section>
 
@@ -32,10 +31,8 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="bio-content">
-                <img src="formula.jpg" alt="Ali Noun beside a Formula 1 car" style="width: 100%; max-width: 300px; height: auto; float: left; margin-right: 20px;">
                 <p>Hello! I’m <strong>Ali Noun</strong>, a dedicated engineering student from Lebanon with a deep-seated passion for <strong>mechanical and software engineering</strong>. My fascination with engineering began in my early teens, sparked by the sleek design and incredible speed of <strong>Formula 1 racing cars</strong>. This passion quickly grew into a broader interest in how things work, driving me towards a path of engineering.</p>
             </div>
-            <div style="clear: both;"></div> 
         </div>
     </section>
 
@@ -58,8 +55,8 @@
         </ul>
     </section>
 
-    <button id="showHobbiesBtn">Show Hobbies</button>
-    <button id="hideHobbiesBtn" style="display:none;">Hide Hobbies</button>
+    <button id="showHobbiesBtn" class="button">Show Hobbies</button>
+    <button id="hideHobbiesBtn" class="button" style="display:none;">Hide Hobbies</button>
 
     <section id="contact">
         <h2>Contact</h2>
@@ -68,7 +65,7 @@
             <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Email" required>
             <textarea placeholder="Message"></textarea>
-            <button type="submit">Send</button>
+            <button type="submit" class="button">Send</button>
         </form>
     </section>
 
@@ -96,4 +93,5 @@
     </script>
 </body>
 </html>
+
 
